@@ -10,6 +10,13 @@ const callbackErrorFunction = (a, b, c, cb) => {
 
 describe('async/promisify', () => {
   describe('on action', () => {
+    it('should throw on no func', () => {
+      assert.throws(() => {
+        promisify();
+      }, 'func is required');
+    });
+  });
+  describe('on action', () => {
     it('should change a callback to an async function', () => {
       const promiseFunction = promisify(callbackFunction);
       assert.isFunction(promiseFunction);
