@@ -5,6 +5,7 @@ module.exports = function karmaConfig(config) {
     basePath: '../',
     frameworks: ['mocha', 'sinon-chai'],
     files: [
+      'node_modules/babel-polyfill/dist/polyfill.js',
       './tests/**/*.spec.js',
       './src/**/*.js',
     ],
