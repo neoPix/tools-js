@@ -22,7 +22,12 @@
         "stage-0"
       ],
       "plugins": [
-        "istanbul"
+        [
+          "istanbul",
+          {
+            "exclude": "tests/**/*.spec.js"
+          }
+        ]
       ]
     }
   }
