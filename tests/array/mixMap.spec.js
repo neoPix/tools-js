@@ -29,5 +29,11 @@ describe('array/mixMap', () => {
       assert.isArray(res);
       assert.deepEqual(res, [1, 2, 2, 4]);
     });
+    it('should map more than two values', () => {
+      const map = mixMap((a, b, c) => a * b * c);
+      const res = map([1, 2], [1, 2], [1, 2]);
+      assert.isArray(res);
+      assert.deepEqual(res, [1, 2, 2, 4, 2, 4, 4, 8]);
+    });
   });
 });
