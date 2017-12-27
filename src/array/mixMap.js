@@ -15,9 +15,9 @@ const mixMap = (cb = required('cb')) => (...args) => {
   const compose = (pos = 0, values = []) =>
     arrays[pos].reduce((acc, value) => {
       if (pos < maxLen) {
-        return acc.concat(compose(pos + 1, [...values, value]));
+        return acc.concat(compose(pos + 1, values.concat([value])));
       }
-      return acc.concat([cb(...[...values, value])]);
+      return acc.concat([cb(...values.concat([value]))]);
     }, []);
   return compose();
 };
