@@ -5,9 +5,6 @@ function resolve(dir) {
 }
 
 module.exports = {
-  entry: {
-    app: './src/main.js',
-  },
   output: {
     path: resolve('./dist/'),
     filename: '[name].js',
