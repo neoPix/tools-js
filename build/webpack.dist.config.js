@@ -11,7 +11,7 @@ const webpackConfig = merge(baseConfig, {
   devtool: '#inline-source-map',
   plugins: [
     new webpack.optimize.UglifyJsPlugin({
-      mangle: false,
+      mangle: true,
       sourcemap: false,
       include: /\.min\.js$/,
     }),
