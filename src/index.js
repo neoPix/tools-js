@@ -5,6 +5,8 @@ import mixMap from './array/mixMap';
 import executionDuration from './async/executionDuration';
 import promisify from './async/promisify';
 import sleep from './async/sleep';
+import retry from './async/retry';
+import command from './async/command';
 // dom
 import event from './dom/event';
 // math
@@ -22,6 +24,8 @@ export default {
   executionDuration,
   promisify,
   sleep,
+  retry,
+  command,
   // dom
   event,
   // math
