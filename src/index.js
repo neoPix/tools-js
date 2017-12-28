@@ -7,6 +7,7 @@ import promisify from './async/promisify';
 import sleep from './async/sleep';
 import retry from './async/retry';
 import command from './async/command';
+import commandBus from './async/commandBus';
 // dom
 import event from './dom/event';
 // math
@@ -26,6 +27,7 @@ export default {
   sleep,
   retry,
   command,
+  commandBus,
   // dom
   event,
   // math
