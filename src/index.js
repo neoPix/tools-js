@@ -8,6 +8,8 @@ import sleep from './async/sleep';
 import retry from './async/retry';
 import command from './async/command';
 import commandBus from './async/commandBus';
+// async
+import cache from './cache/cache';
 // dom
 import event from './dom/event';
 // math
@@ -28,6 +30,8 @@ export default {
   retry,
   command,
   commandBus,
+  // cache
+  cache,
   // dom
   event,
   // math
