@@ -1,6 +1,6 @@
 import { assert } from 'chai';
-import commandBus from '../../src/async/commandBus';
-import command from '../../src/async/command';
+import commandBus from '../../src/patterns/commandBus';
+import command from '../../src/patterns/command';
 import sleep from '../../src/async/sleep';
 
 describe('async/commandBus', () => {

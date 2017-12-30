@@ -6,8 +6,9 @@ import executionDuration from './async/executionDuration';
 import promisify from './async/promisify';
 import sleep from './async/sleep';
 import retry from './async/retry';
-import command from './async/command';
-import commandBus from './async/commandBus';
+// patterns
+import command from './patterns/command';
+import commandBus from './patterns/commandBus';
 // async
 import cache from './cache/cache';
 // dom
@@ -30,6 +31,7 @@ export default {
   promisify,
   sleep,
   retry,
+  // patterns
   command,
   commandBus,
   // cache

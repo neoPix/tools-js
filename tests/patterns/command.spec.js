@@ -1,5 +1,5 @@
 import { assert } from 'chai';
-import command from '../../src/async/command';
+import command from '../../src/patterns/command';
 import sleep from '../../src/async/sleep';
 
 describe('async/command', () => {

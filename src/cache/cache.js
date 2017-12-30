@@ -35,7 +35,7 @@ function cacheGenerator(loader = required('loader'), validity = Infinity) {
      * @returns {undefined}
      */
     clear() {
-      Array.from(cache.keys()).map(key => this.remove(key));
+      cache.clear();
     },
     /**
      * @returns {int} The size of the cache
