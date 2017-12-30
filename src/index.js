@@ -9,6 +9,7 @@ import retry from './async/retry';
 // patterns
 import command from './patterns/command';
 import commandBus from './patterns/commandBus';
+import emitter from './patterns/emitter';
 // async
 import cache from './cache/cache';
 // dom
@@ -34,6 +35,7 @@ export default {
   // patterns
   command,
   commandBus,
+  emitter,
   // cache
   cache,
   // dom
