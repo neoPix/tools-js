@@ -18,6 +18,8 @@ import clamp from './math/clamp';
 import random from './string/random';
 // tools
 import required from './tools/required';
+// value
+import funcOrValue from './value/funcOrValue';
 
 export default {
   // array
@@ -40,4 +42,6 @@ export default {
   random,
   // tools
   required,
+  // value
+  funcOrValue,
 };
